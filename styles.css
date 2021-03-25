@@ -401,6 +401,13 @@ main {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
+.planes-container--slider::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3px;
+}
+.planes-container--slider::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
 .plan-title {
   position: absolute;
   width: 120px;
