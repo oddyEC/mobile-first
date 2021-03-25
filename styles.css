@@ -381,13 +381,21 @@ main {
   line-height: 1.8rem;
   color: #757575;
 }
+.plans-container--slider {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
 .plans-container--card {
   position: relative;
+  scroll-snap-align: center; /*Centra el elemento que estamos viendo*/
   width: 70%;
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 20px 0;
   padding: 0 15px;
   background-color: var(--just-white);
   border-radius: 15px;
@@ -404,31 +412,31 @@ main {
   border-radius: 8px;
   color: var(--just-white);
 }
-.plan-title.recommended{
- background-color: var(--bitcoin-orange);
+.plan-title.recommended {
+  background-color: var(--bitcoin-orange);
 }
-.plan-title.basic{
+.plan-title.basic {
   background-color: var(--grey);
 }
-.plan-title.premium{
+.plan-title.premium {
   background-color: var(--secondary-blue);
 }
-.plan-card--title{
+.plan-card--title {
   padding-top: 30px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: var(--black);
 }
-.plan-card--price{
+.plan-card--price {
   padding: 5px 0;
   font-size: 5.2rem;
   font-weight: bold;
   line-height: 5.3rem;
   color: var(--black);
 }
-.plan-card--price span{
-  font-size: 1.2rem ;
+.plan-card--price span {
+  font-size: 1.2rem;
   font-weight: 300;
   vertical-align: text-top;
 }
@@ -436,12 +444,12 @@ main {
   font-size: 1.2rem;
   color: #757575;
 }
-.plan-card--ca{
+.plan-card--ca {
   width: 150px;
   height: 48px;
   margin-top: 20px;
   background-color: var(--off-white);
-  
+
   border-radius: 4px;
   font-size: 1.4rem;
   font-weight: bold;
@@ -449,20 +457,20 @@ main {
   color: var(--black);
   font-family: "DM Sans", sans-serif;
 }
-.plan-card--ca.recommended--ca{
+.plan-card--ca.recommended--ca {
   border: 2px solid var(--bitcoin-orange);
 }
-.plan-card--ca.basic--ca{
-  border: 2px solid var(--grey)
+.plan-card--ca.basic--ca {
+  border: 2px solid var(--grey);
 }
-.plan-card--ca.premium--ca{
-  border: 2px solid var(--secondary-blue)
+.plan-card--ca.premium--ca {
+  border: 2px solid var(--secondary-blue);
 }
 
-.plan-card--ca span{
+.plan-card--ca span {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('./assets/icons/orange-right-arrow.svg');
+  background-image: url("./assets/icons/orange-right-arrow.svg");
   vertical-align: text-bottom;
 }
