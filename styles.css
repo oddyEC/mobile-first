@@ -393,7 +393,7 @@ main {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
-.recommended {
+.plan-title {
   position: absolute;
   width: 120px;
   height: 31px;
@@ -401,9 +401,17 @@ main {
   top: -15px;
   left: calc(50% - 50px);
   font-size: 1.2rem;
-  background-color: var(--bitcoin-orange);
   border-radius: 8px;
   color: var(--just-white);
+}
+.plan-title.recommended{
+ background-color: var(--bitcoin-orange);
+}
+.plan-title.basic{
+  background-color: var(--grey);
+}
+.plan-title.premium{
+  background-color: var(--secondary-blue);
 }
 .plan-card--title{
   padding-top: 30px;
@@ -427,4 +435,34 @@ main {
 .plan-card--saving {
   font-size: 1.2rem;
   color: #757575;
+}
+.plan-card--ca{
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: var(--off-white);
+  
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+  font-family: "DM Sans", sans-serif;
+}
+.plan-card--ca.recommended--ca{
+  border: 2px solid var(--bitcoin-orange);
+}
+.plan-card--ca.basic--ca{
+  border: 2px solid var(--grey)
+}
+.plan-card--ca.premium--ca{
+  border: 2px solid var(--secondary-blue)
+}
+
+.plan-card--ca span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('./assets/icons/orange-right-arrow.svg');
+  vertical-align: text-bottom;
 }
